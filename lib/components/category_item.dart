@@ -13,7 +13,9 @@ class CategoryItem extends StatelessWidget {
     Navigator.of(context).push(
       CupertinoPageRoute(
         builder: (_) {
-          return CategoriesMealsScreen();
+          return CategoriesMealsScreen(
+            category: category,
+          );
         },
       ),
     );
