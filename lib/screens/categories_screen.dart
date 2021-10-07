@@ -11,8 +11,8 @@ class CategoriesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        systemNavigationBarColor: Colors.blue, // navigation bar color
-        statusBarColor: Colors.blue, // status bar color
+        systemNavigationBarColor: Colors.pink, // navigation bar color
+        statusBarColor: Colors.pink, // status bar color
       ),
     );
     return Scaffold(
@@ -21,6 +21,7 @@ class CategoriesScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: GridView(
+        padding: const EdgeInsets.all(25),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200,
             childAspectRatio: 3 / 2,

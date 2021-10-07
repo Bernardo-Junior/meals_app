@@ -11,7 +11,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'DeliMeals',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        canvasColor: Color.fromRGBO(255, 255, 229, 1),
+        primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        fontFamily: 'Releway',
+        textTheme: ThemeData.light().textTheme.copyWith(
+              headline6: TextStyle(
+                fontSize: 20,
+                fontFamily: 'RobotoCondensed',
+              ),
+            ),
       ),
       home: CategoriesScreen(),
     );
